@@ -1,4 +1,4 @@
-[![Commitlint](https://github.com/Anomia-App/anomia/actions/workflows/commitlint.yml/badge.svg)](https://github.com/Anomia-App/anomia/actions/workflows/commitlint.yml)
+[![Commitlint](https://github.com/Anomia-App/anomia/actions/workflows/commitlint.yml/badge.svg?branch={{pullData.branch}})](https://github.com/Anomia-App/anomia/actions/workflows/commitlint.yml)
 
 Closes https://app.clickup.com/t/TICKET_ID.
 
