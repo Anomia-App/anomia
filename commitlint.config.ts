@@ -46,9 +46,12 @@ function clickUpTicket(parsed): boolean {
     const type = parsed.type;
     const subject = parsed.subject;
 
-    if (type && (type === "chore" || type === "revert")) {
-        // a commit of type "chore" does not require a Jira ticket
-        return true;
+    if (!subject) {
+        return false;
+    }
+    
+    if (type === "chore" || type === "revert") {
+        return (type === "chore" && subject?.match(/([a-z0-9]{9} )/) ? !!subject?.match(ticketIdRegex) : true);
     }
 
     return !!subject?.match(ticketIdRegex);
