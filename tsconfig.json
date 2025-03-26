@@ -2,5 +2,12 @@
   "extends": "./tsconfig.base.json",
   "compileOnSave": false,
   "files": [],
-  "references": []
+  "references": [
+    {
+      "path": "./apps/backend/anomia-server-e2e"
+    },
+    {
+      "path": "./apps/backend/anomia-server"
+    }
+  ]
 }
